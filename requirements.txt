@@ -1,0 +1,11 @@
+mediapipe
+pandas
+opencv-python
+numpy
+tensorflow
+torch
+streamlit
+flask
+numpy
+matplotlib
+seaborn
