@@ -76,11 +76,6 @@ def process_frame(frame):
 
     try:
                 
-        if cv2.waitKey(10) & 0xFF == ord('q'):
-            print(f"\n📝 Saving Data: Bicep curl - Total reps: {count}")
-            log_reps("Bicep curl", count)
-            cleanup()
-            # break
         if results.pose_landmarks:
             landmarks = results.pose_landmarks.landmark
 

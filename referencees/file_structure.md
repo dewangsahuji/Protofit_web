@@ -26,4 +26,3 @@ fitoproto_web/
 
 
 
-conda activate C:\Users\dewan\Coding\Python\pythonProject\fitoproto\protofit\proto

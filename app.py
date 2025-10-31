@@ -3,6 +3,8 @@ import cv2
 import pandas as pd
 import matplotlib.pyplot as plt
 import io, base64
+from flask import request, jsonify
+
 
 
 #-------------------------------
@@ -110,6 +112,21 @@ def dashboard():
 
 
 
+# ------------------------------
+# 🔹 Fitobot Chatbot Routes
+# ------------------------------
+
+@app.route('/chatbot')
+def chatbot():
+    """Chatbot UI Page"""
+    return render_template('chat.html')
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    """Handles chatbot interaction"""
+    user_input = request.json.get('message', '')
+    reply = get_fitobot_response(user_input)
+    return jsonify({"response": reply})
 
 
 

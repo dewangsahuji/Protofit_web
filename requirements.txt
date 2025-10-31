@@ -9,3 +9,11 @@ flask
 numpy
 matplotlib
 seaborn
+langchain==0.3.27
+openai
+langchain-openai
+
+
+
+
+
